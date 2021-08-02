@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <style>
+        #123 {
+            width: 1000px;
+            height: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="123">
+        <video autoplay="true" id="videoElement"></video>
+    </div>
+
+    <script>
+        var video = document.querySelector("#videoElement");
+
+        var promise = navigator.mediaDevices.getUserMedia(constraints);
+
+    </script>
+    <!-- <script>
+        // async function mma(){
+        //     fetch("https://api-and-websockets.herokuapp.com/api")
+        //     let p = await 
+        // }
+        let url = 'https://reqres.in/api/users/'
+
+
+        // fetch("https://api-and-websockets.herokuapp.com/api/get_scores/puzzle2048")
+        // .then(res => res.json())
+        // .then(data => {
+        //     let three = data[3].name
+        //     document.getElementById("root").innerText = threeaa.data[1].avatar
+        // })
+
+        async function mma (){
+        var res = await fetch(url)
+        var aa = await res.json();
+        console.log(aa.data);
+
+        document.getElementById("123").innerHTML = `<img src="${aa.data[1].avatar}">`
+        }
+        mma()
+
+        </script> -->
+</body>
+
+</html>
